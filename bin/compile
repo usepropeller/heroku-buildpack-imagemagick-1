@@ -30,7 +30,7 @@ function package_download() {
   location="$2"
 
   mkdir -p $location
-  package="https://launchpad.net/imagemagick/main/6.8.6-6/+download/ImageMagick-6.8.6-6.tar.gz"
+  package="https://assets.tandemstock.com.s3.amazonaws.com/im-6.8.6-6.tar.gz"
   curl $package -s -o - | tar  xvzf  - -C $location
 }
 
