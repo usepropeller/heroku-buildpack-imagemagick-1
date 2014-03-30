@@ -31,7 +31,7 @@ function package_download() {
 
   mkdir -p $location
   package="https://launchpad.net/imagemagick/main/6.8.6-6/+download/ImageMagick-6.8.6-6.tar.gz"
-  curl $package -s -o - | tar xzf - -C $location
+  curl $package -s -o - | tar  xvzf  - -C $location
 }
 
 # we need this directory, it's our destination
