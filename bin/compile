@@ -31,7 +31,7 @@ function package_download() {
 
   mkdir -p $location
   package="https://assets.tandemstock.com.s3.amazonaws.com/im-6.8.6-6.tar.gz"
-  curl $package -s -o - | tar  xvzf  - -C $location
+  curl $package -s -o - | tar  xzf  - -C $location
 }
 
 # we need this directory, it's our destination
